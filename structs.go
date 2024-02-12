@@ -1508,6 +1508,9 @@ type Member struct {
 	// The time at which the member's timeout will expire.
 	// Time in the past or nil if the user is not timed out.
 	CommunicationDisabledUntil *time.Time `json:"communication_disabled_until"`
+
+	// Returns the member’s current voice state.
+	Voice *VoiceState `json:"voice_state"`
 }
 
 // Mention creates a member mention
